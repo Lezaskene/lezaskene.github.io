@@ -43,6 +43,34 @@
   </div>
 </section>
 
+<section id="parcours" class="container py-5 ">
+  <h2 class="text-center mb-5">Mon Parcours</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content card bg-dark border border-primary shadow-lg">
+        <h4 class="text-primary">🎓 Lycée (2020 - 2022)</h4>
+        <p>Baccalauréat Technologique – Lycée Nicolas Appert</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content card bg-dark border border-primary shadow-lg">
+        <h4 class="text-primary">🏫 BUT GEII (2022 - 2025)</h4>
+        <p>IUT de Nantes – Génie Électrique & Informatique Industrielle</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content card bg-dark border border-primary shadow-lg">
+        <h4 class="text-primary">🏗️ IMT Atlantique (2025 - 2028)</h4>
+        <p>Ingénieur en alternance – Transformation Digitale des Systèmes Industrielles (FIT)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- Ajoute ceci dans la section "Compétences" (modifié avec data-skill + .skill-filter) -->
 <section id="competences" class="container py-5 animate__animated animate__fadeInUp">
   <h2 class="text-center mb-4">Compétences</h2>
@@ -59,38 +87,56 @@
   </div>
 </section>
 
-  <section id="projets" class="container py-5 animate__animated animate__fadeInUp">
-    <h2 class="text-center mb-4">Projets</h2>
-    <div class="row g-4">
-      <div class="col-md-6 project" data-skills="HTML,CSS,JavaScript,SQL,Node-RED">
-        <div class="card bg-black text-light h-100 border border-primary">
-          <div class="card-body">
-            <h3 class="card-title">Comptage de personnes par caméras IP</h3>
-            <p class="card-text">Projet réalisé chez Cojitech : système de comptage avec Node-RED, SQL, HTML/CSS/JS, et interfaces utilisateur pour la visualisation des données.</p>
-            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalComptage">Voir plus</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 project" data-skills="Automatisme,Python,Capteurs">
-        <div class="card bg-black text-light h-100 border border-primary">
-          <div class="card-body">
-            <h3 class="card-title">Système de passage à niveau</h3>
-            <p class="card-text">Conception et automatisation d'un système ferroviaire simulé, réalisé en 2e année de BUT GEII.</p>
-            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPassage">Voir plus</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 project" data-skills="C,Python,Capteurs,Embarqué">
-        <div class="card bg-black text-light h-100 border border-primary">
-          <div class="card-body">
-            <h3 class="card-title">Robot mobile autonome</h3>
-            <p class="card-text">Projet universitaire combinant électronique, capteurs, et logique embarquée pour le déplacement autonome d'un robot.</p>
-            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRobot">Voir plus</a>
-          </div>
+<section id="projets" class="container py-5 animate__animated animate__fadeInUp">
+  <h2 class="text-center mb-4">Projets</h2>
+  <div class="row g-4">
+
+    <!-- Projet 1 -->
+    <div class="col-md-6 project" data-skills="HTML,CSS,JavaScript,SQL,Node-RED,Suite Office,Communication,Python">
+      <div class="card bg-black text-light h-100 border border-primary">
+        <div class="card-body">
+          <h3 class="card-title">Comptage de personnes par caméras IP</h3>
+          <p class="card-text">Projet réalisé chez Cojitech : système de comptage avec Node-RED, SQL, HTML/CSS/JS, et interfaces utilisateur pour la visualisation des données.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalComptage">Voir plus</a>
         </div>
       </div>
     </div>
-  </section>
+
+        <!-- Projet 2 -->
+    <div class="col-md-6 project" data-skills="C,Capteurs,Embarqué">
+      <div class="card bg-black text-light h-100 border border-primary">
+        <div class="card-body">
+          <h3 class="card-title">Site de gestion de stock</h3>
+          <p class="card-text">L’entreprise souhaitait mettre en place un outil complet de gestion de stock répondant à plusieurs besoins opérationnels.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalStock">Voir plus</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet 3 -->
+    <div class="col-md-6 project" data-skills="Automatisme,Python,Capteurs">
+      <div class="card bg-black text-light h-100 border border-primary">
+        <div class="card-body">
+          <h3 class="card-title">Système de passage à niveau</h3>
+          <p class="card-text">Conception et automatisation d'un système ferroviaire simulé, réalisé en 2e année de BUT GEII.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPassage">Voir plus</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet 4 -->
+    <div class="col-md-6 project" data-skills="C,Capteurs,Embarqué">
+      <div class="card bg-black text-light h-100 border border-primary">
+        <div class="card-body">
+          <h3 class="card-title">Robot mobile autonome</h3>
+          <p class="card-text">Projet universitaire combinant électronique, capteurs, et logique embarquée pour le déplacement autonome d'un robot.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRobot">Voir plus</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <section id="cv" class="container py-5 text-center animate__animated animate__fadeInUp">
     <h2>CV</h2>
@@ -155,6 +201,26 @@
     </div>
   </div>
 </div>
+
+<!-- MODAL 4 -->
+<div class="modal fade" id="modalStock" tabindex="-1" aria-labelledby="modalStockLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalStockLabel">Site de gestion de stock</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/Stock.png" class="img-fluid mx-auto d-block rounded mb-3" style="max-width: 75%; height: auto;" alt="Site de gestion de stock">
+        <p>
+          L'entreprise souhaitait un outil de gestion de stock répondant à plusieurs attentes :
+          accéder à chaque matériel via un QR code et un smartphone, garder un historique des entrées/sorties, gérer des comptes utilisateurs individuels, ajouter des informations facultatives pour chaque matériel, envoyer automatiquement un e-mail lorsque le stock atteint un seuil critique, et proposer une interface adaptée aux téléphones ainsi qu'une version PC plus complète avec des fonctionnalités de modification.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
