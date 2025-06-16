@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Théo Boursiquot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top">
+    <div class="container-fluid justify-content-center">
+      <a class="nav-link px-3" href="#accueil">Accueil</a>
+      <a class="nav-link px-3" href="#apropos">À propos</a>
+      <a class="nav-link px-3" href="#competences">Compétences</a>
+      <a class="nav-link px-3" href="#projets">Projets</a>
+      <a class="nav-link px-3" href="#cv">CV</a>
+      <a class="nav-link px-3" href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header id="accueil" class="text-center py-5 mt-5 animate__animated animate__fadeIn">
+    <h1>Théo Boursiquot</h1>
+    <p>Futur ingénieur IMT Atlantique | Transformation Digitale | Systèmes Industriels</p>
+    <div class="mt-3">
+      <a href="#projets" class="btn btn-outline-primary m-2">Voir mes projets</a>
+      <a href="#contact" class="btn btn-primary m-2">Me contacter</a>
+    </div>
+  </header>
+
+  <section id="apropos" class="container py-5 animate__animated animate__fadeInUp">
+  <h2 class="text-center mb-5">À propos</h2>
+  <div class="row align-items-center">
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+      <img src="assets/photo-theo.jpg" alt="Photo de Théo Boursiquot" class="img-fluid rounded shadow-lg" style="max-height: 450px; max-width: 300px; width: 100%; object-fit: cover;">
+    </div>
+    <div class="col-md-7">
+      <p class="lead">Actuellement en 3ᵉ année de BUT GEII à l'IUT de Nantes, je suis admis à IMT Atlantique pour intégrer le parcours FIT (Transformation Digitale des Systèmes Industriels). Je suis passionné par les technologies numériques, l’automatisation, les systèmes embarqués, et je cherche une alternance de 3 ans dans ces domaines.</p>
+      <p>Curieux, adaptable, et à l’aise en communication, j’ai acquis des compétences solides en développement web, traitement de données, et gestion de projets à travers mes expériences en entreprise, à l’université et en association.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Ajoute ceci dans la section "Compétences" (modifié avec data-skill + .skill-filter) -->
+<section id="competences" class="container py-5 animate__animated animate__fadeInUp">
+  <h2 class="text-center mb-4">Compétences</h2>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <span class="badge bg-primary p-3 skill-filter" data-skill="HTML">HTML</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="CSS">CSS</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="JavaScript">JavaScript</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Python">Python</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="SQL">SQL</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Node-RED">Node-RED</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Suite Office">Suite Office</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Communication">Communication</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Travail d'équipe">Travail d'équipe</span>
+  </div>
+</section>
+
+  <section id="projets" class="container py-5 animate__animated animate__fadeInUp">
+    <h2 class="text-center mb-4">Projets</h2>
+    <div class="row g-4">
+      <div class="col-md-6 project" data-skills="HTML,CSS,JavaScript,SQL,Node-RED">
+        <div class="card bg-black text-light h-100 border border-primary">
+          <div class="card-body">
+            <h3 class="card-title">Comptage de personnes par caméras IP</h3>
+            <p class="card-text">Projet réalisé chez Cojitech : système de comptage avec Node-RED, SQL, HTML/CSS/JS, et interfaces utilisateur pour la visualisation des données.</p>
+            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalComptage">Voir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 project" data-skills="Automatisme,Python,Capteurs">
+        <div class="card bg-black text-light h-100 border border-primary">
+          <div class="card-body">
+            <h3 class="card-title">Système de passage à niveau</h3>
+            <p class="card-text">Conception et automatisation d'un système ferroviaire simulé, réalisé en 2e année de BUT GEII.</p>
+            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPassage">Voir plus</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 project" data-skills="C,Python,Capteurs,Embarqué">
+        <div class="card bg-black text-light h-100 border border-primary">
+          <div class="card-body">
+            <h3 class="card-title">Robot mobile autonome</h3>
+            <p class="card-text">Projet universitaire combinant électronique, capteurs, et logique embarquée pour le déplacement autonome d'un robot.</p>
+            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalRobot">Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" class="container py-5 text-center animate__animated animate__fadeInUp">
+    <h2>CV</h2>
+    <p>Téléchargez mon CV ici :</p>
+    <a href="assets/Boursiquot_Théo_CV-IMT-FIT.pdf" class="btn btn-outline-primary" download>Télécharger le CV</a>
+  </section>
+
+  <section id="contact" class="container py-5 text-center animate__animated animate__fadeInUp">
+    <h2>Contact</h2>
+    <p>Email : <a class="text-decoration-none text-primary" href="mailto:theo.boursiquot@etu.univ-nantes.fr">theo.boursiquot@etu.univ-nantes.fr</a></p>
+    <p>LinkedIn : <a class="text-decoration-none text-primary" href="https://www.linkedin.com/in/theo-geii/" target="_blank">Théo Boursiquot</a></p>
+  </section>
+
+  <footer class="bg-black text-center py-3">
+    <p class="mb-0 text-primary">© 2025 Théo Boursiquot</p>
+  </footer>
+
+<!-- MODAL 1 -->
+<div class="modal fade" id="modalComptage" tabindex="-1" aria-labelledby="modalComptageLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalComptageLabel">Comptage de personnes par caméras IP</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/chaine_global_de_fonctionnement.jpg" class="img-fluid rounded mb-3" alt="Projet comptage">
+        <p>Projet réalisé chez Cojitech : système de comptage de personnes basé sur des caméras IP. Interfaces web créées avec HTML/CSS/JS. Gestion de la logique via Node-RED et stockage des données avec SQL.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal fade" id="modalPassage" tabindex="-1" aria-labelledby="modalPassageLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPassageLabel">Système de passage à niveau</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/projet-passage.jpg" class="img-fluid rounded mb-3" alt="Système de passage à niveau">
+        <p>Simulation et automatisation d’un passage à niveau ferroviaire avec logique de détection, signaux lumineux et barrières motorisées. Réalisé en 2ᵉ année de BUT GEII.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 3 -->
+<div class="modal fade" id="modalRobot" tabindex="-1" aria-labelledby="modalRobotLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRobotLabel">Robot mobile autonome</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/projet-robot.jpg" class="img-fluid rounded mb-3" alt="Robot mobile">
+        <p>Développement d’un robot mobile capable d’évoluer de manière autonome, en évitant les obstacles, grâce à des capteurs et une logique embarquée. Projet de groupe universitaire mêlant électronique, programmation et conception.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+  const badges = document.querySelectorAll('.skill-filter');
+  const projects = document.querySelectorAll('.project');
+  let activeSkill = null;
+
+  badges.forEach(badge => {
+    badge.addEventListener('click', () => {
+      const skill = badge.dataset.skill;
+
+      // Toggle si même badge cliqué
+      if (activeSkill === skill) {
+        activeSkill = null;
+        badges.forEach(b => b.classList.remove('bg-info'));
+        projects.forEach(p => p.classList.remove('dimmed'));
+        return;
+      }
+
+      activeSkill = skill;
+
+      // Mise à jour visuelle des badges
+      badges.forEach(b => b.classList.remove('bg-info'));
+      badge.classList.add('bg-info');
+
+      // Mise en évidence des projets correspondants
+      projects.forEach(project => {
+        const skills = project.dataset.skills.toLowerCase();
+        if (skills.includes(skill.toLowerCase())) {
+          project.classList.remove('dimmed');
+        } else {
+          project.classList.add('dimmed');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
