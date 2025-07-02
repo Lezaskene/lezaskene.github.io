@@ -79,8 +79,14 @@
     <span class="badge bg-primary p-3 skill-filter" data-skill="CSS">CSS</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="JavaScript">JavaScript</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Python">Python</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Django">Django</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="PHP">PHP</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="SQL">SQL</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Node-RED">Node-RED</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Automatisme">Automatisme</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Supervision">Supervision</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Capteurs">Capteurs</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="Embarqué">Embarqué</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Suite Office">Suite Office</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Communication">Communication</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Travail d'équipe">Travail d'équipe</span>
@@ -103,7 +109,7 @@
     </div>
 
         <!-- Projet 2 -->
-    <div class="col-md-6 project" data-skills="C,Capteurs,Embarqué">
+    <div class="col-md-6 project" data-skills="Capteurs,Embarqué">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Site de gestion de stock</h3>
@@ -114,18 +120,29 @@
     </div>
 
     <!-- Projet 3 -->
-    <div class="col-md-6 project" data-skills="Automatisme,Python,Capteurs">
+    <div class="col-md-6 project" data-skills="Python,Django,SQL,HTML,CSS,JavaScript">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
-          <h3 class="card-title">Système de passage à niveau</h3>
-          <p class="card-text">Conception et automatisation d'un système ferroviaire simulé, réalisé en 2e année de BUT GEII.</p>
-          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalPassage">Voir plus</a>
+          <h3 class="card-title">Application web Django</h3>
+          <p class="card-text">Développement d'une application web moderne avec Django, intégrant base de données et authentification.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalDjango">Voir plus</a>
         </div>
       </div>
     </div>
 
     <!-- Projet 4 -->
-    <div class="col-md-6 project" data-skills="C,Capteurs,Embarqué">
+    <div class="col-md-6 project" data-skills="Automatisme,Supervision">
+      <div class="card bg-black text-light h-100 border border-primary">
+        <div class="card-body">
+          <h3 class="card-title">Prototype d'ascenseur + Supervision</h3>
+          <p class="card-text">Conception et réalisation d'un prototype d'ascenseur automatisé avec système de supervision.</p>
+          <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalAscenseur">Voir plus</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet  -->
+    <div class="col-md-6 project" data-skills="Capteurs,Embarqué">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Robot mobile autonome</h3>
@@ -170,17 +187,31 @@
   </div>
 </div>
 
-<!-- MODAL 2 -->
-<div class="modal fade" id="modalPassage" tabindex="-1" aria-labelledby="modalPassageLabel" aria-hidden="true">
+<!-- MODAL Django -->
+<div class="modal fade" id="modalDjango" tabindex="-1" aria-labelledby="modalDjangoLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalPassageLabel">Système de passage à niveau</h5>
+        <h5 class="modal-title" id="modalDjangoLabel">Application web Django</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="assets/projet-passage.jpg" class="img-fluid rounded mb-3" alt="Système de passage à niveau">
-        <p>Simulation et automatisation d’un passage à niveau ferroviaire avec logique de détection, signaux lumineux et barrières motorisées. Réalisé en 2ᵉ année de BUT GEII.</p>
+        <p>Développement d'une application web moderne avec Django, intégrant base de données et authentification.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL Ascenseur -->
+<div class="modal fade" id="modalAscenseur" tabindex="-1" aria-labelledby="modalAscenseurLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAscenseurLabel">Prototype d'ascenseur + Supervision</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Conception et réalisation d'un prototype d'ascenseur automatisé avec système de supervision.</p>
       </div>
     </div>
   </div>
@@ -216,6 +247,22 @@
           L'entreprise souhaitait un outil de gestion de stock répondant à plusieurs attentes :
           accéder à chaque matériel via un QR code et un smartphone, garder un historique des entrées/sorties, gérer des comptes utilisateurs individuels, ajouter des informations facultatives pour chaque matériel, envoyer automatiquement un e-mail lorsque le stock atteint un seuil critique, et proposer une interface adaptée aux téléphones ainsi qu'une version PC plus complète avec des fonctionnalités de modification.
         </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 5 -->
+<div class="modal fade" id="modalAscenseur" tabindex="-1" aria-labelledby="modalAscenseurLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAscenseurLabel">Prototype d'ascenseur + Supervision</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="assets/projet_ascenseur_supervision.jpg" class="img-fluid rounded mb-3" alt="Prototype d'ascenseur">
+        <p>Conception et réalisation d'un prototype d'ascenseur automatisé avec un système de supervision. Ce projet démontre mes compétences en automatisme, supervision, et développement d'interfaces utilisateur.</p>
       </div>
     </div>
   </div>
