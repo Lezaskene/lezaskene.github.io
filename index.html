@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Théo Boursiquot</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <div class="modal-body">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="assets/projet-robot.jpg" class="img-fluid rounded sticky-top" style="top: 20px;" alt="Robot mobile">
+          </div>
+          <div class="col-md-7">
+            <p>Développement d'un robot mobile capable d'évoluer de manière autonome, en évitant les obstacles, grâce à des capteurs et une logique embarquée. Projet de groupe universitaire mêlant électronique, programmation et conception.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>el="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-dark text-light">
@@ -172,14 +184,14 @@
 
 <!-- MODAL 1 -->
 <div class="modal fade" id="modalComptage" tabindex="-1" aria-labelledby="modalComptageLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
         <h5 class="modal-title" id="modalComptageLabel">Comptage de personnes par caméras IP</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="assets/chaine_global_de_fonctionnement.jpg" class="img-fluid rounded mb-3" alt="Projet comptage">
+        <img src="assets/chaine_global_de_fonctionnement.jpg" class="img-fluid rounded mb-3 mx-auto d-block" alt="Projet comptage">
         <p>Projet réalisé chez Cojitech : système de comptage de personnes basé sur des caméras IP. Interfaces web créées avec HTML/CSS/JS. Gestion de la logique via Node-RED et stockage des données avec SQL.</p>
         
         <!-- Section apprentissages critiques -->
@@ -210,23 +222,25 @@
 
 <!-- MODAL Mini projet BDD -->
 <div class="modal fade" id="modalDjango" tabindex="-1" aria-labelledby="modalDjangoLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
         <h5 class="modal-title" id="modalDjangoLabel">Mini projet Base de données</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div class="mb-3 text-center">
-          <div>
-            <img src="assets/Projet_bdd1.png" class="img-fluid rounded mb-0 mt-0" style="max-width: 80%;" alt="Interface du mini projet BDD - Vue 1">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="sticky-top" style="top: 20px;">
+              <div class="d-flex flex-column">
+                <img src="assets/Projet_bdd1.png" class="img-fluid rounded-top mb-0" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;" alt="Interface du mini projet BDD - Vue 1">
+                <img src="assets/Projet_bdd2.png" class="img-fluid mb-0" style="border-radius: 0;" alt="Interface du mini projet BDD - Vue 2">
+                <img src="assets/Projet_bdd3.png" class="img-fluid rounded-bottom" style="border-top-left-radius: 0; border-top-right-radius: 0;" alt="Interface du mini projet BDD - Vue 3">
+              </div>
+            </div>
           </div>
-          <div style="margin-top: -1px;">
-            <img src="assets/Projet_bdd2.png" class="img-fluid rounded mb-0 mt-0" style="max-width: 80%;" alt="Interface du mini projet BDD - Vue 2">
-          </div>
-        </div>
-        
-        <p>Ce mini projet consistait à développer une application web complète en PHP/MySQL permettant aux utilisateurs de :</p>
+          <div class="col-md-7">
+            <p>Ce mini projet consistait à développer une application web complète en PHP/MySQL permettant aux utilisateurs de :</p>
         <ul>
           <li>Accéder à une page personnelle avec leurs informations</li>
           <li>Participer à un quiz interactif avec enregistrement des réponses</li>
@@ -242,6 +256,8 @@
         </ul>
         
         <p>La base de données relationnelle contient plusieurs tables interconnectées pour stocker les informations des participants, les questions, les réponses et les scores.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -249,15 +265,19 @@
 
 <!-- MODAL Ascenseur -->
 <div class="modal fade" id="modalAscenseur" tabindex="-1" aria-labelledby="modalAscenseurLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
         <h5 class="modal-title" id="modalAscenseurLabel">Prototype d'ascenseur + Supervision</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="assets/Ascenceur.png" class="img-fluid rounded mb-3" alt="Prototype d'ascenseur">
-        <p>Ce projet, réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Évaluation), consistait en la conception et la réalisation d'un prototype d'ascenseur automatisé avec un système de supervision intégré. L'objectif était de développer une maquette fonctionnelle qui simule le comportement d'un ascenseur réel, tout en intégrant une interface de supervision pour le contrôle et le monitoring.</p>
+        <div class="row">
+          <div class="col-md-5">
+            <img src="assets/Ascenceur.png" class="img-fluid rounded sticky-top" style="top: 20px;" alt="Prototype d'ascenseur">
+          </div>
+          <div class="col-md-7">
+            <p>Ce projet, réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Évaluation), consistait en la conception et la réalisation d'un prototype d'ascenseur automatisé avec un système de supervision intégré. L'objectif était de développer une maquette fonctionnelle qui simule le comportement d'un ascenseur réel, tout en intégrant une interface de supervision pour le contrôle et le monitoring.</p>
         
         <p>Le prototype combine plusieurs technologies :</p>
         <ul>
@@ -267,6 +287,8 @@
           <li>Système de communication pour l'échange de données entre l'automate et le système de supervision</li>
         </ul>
         <p>La supervision permet de suivre en temps réel l'état de l'ascenseur, de visualiser sa position dans la cage d'ascenseur. Le projet a permis de mettre en pratique les compétences en automatisme, supervision, et développement d'interfaces utilisateur.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -274,7 +296,7 @@
 
 <!-- MODAL 3 -->
 <div class="modal fade" id="modalRobot" tabindex="-1" aria-labelledby="modalRobotLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
         <h5 class="modal-title" id="modalRobotLabel">Robot mobile autonome</h5>
@@ -290,20 +312,24 @@
 
 <!-- MODAL 4 -->
 <div class="modal fade" id="modalStock" tabindex="-1" aria-labelledby="modalStockLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
         <h5 class="modal-title" id="modalStockLabel">Site de gestion de stock</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="assets/Stock.png" class="img-fluid mx-auto d-block rounded mb-3" style="max-width: 75%; height: auto;" alt="Site de gestion de stock">
-        <p>
-          L'entreprise souhaitait un outil de gestion de stock répondant à plusieurs attentes :
-          accéder à chaque matériel via un QR code et un smartphone, garder un historique des entrées/sorties, gérer des comptes utilisateurs individuels, ajouter des informations facultatives pour chaque matériel, envoyer automatiquement un e-mail lorsque le stock atteint un seuil critique, et proposer une interface adaptée aux téléphones ainsi qu'une version PC plus complète avec des fonctionnalités de modification.
-        </p>
-        
-        <!-- Section apprentissages critiques -->
+        <div class="row">
+          <div class="col-md-5">
+            <img src="assets/Stock.png" class="img-fluid rounded sticky-top" style="top: 20px;" alt="Site de gestion de stock">
+          </div>
+          <div class="col-md-7">
+            <p>
+              L'entreprise souhaitait un outil de gestion de stock répondant à plusieurs attentes :
+              accéder à chaque matériel via un QR code et un smartphone, garder un historique des entrées/sorties, gérer des comptes utilisateurs individuels, ajouter des informations facultatives pour chaque matériel, envoyer automatiquement un e-mail lorsque le stock atteint un seuil critique, et proposer une interface adaptée aux téléphones ainsi qu'une version PC plus complète avec des fonctionnalités de modification.
+            </p>
+            
+            <!-- Section apprentissages critiques -->
         <div class="mt-4 pt-3 border-top border-secondary">
           <h6 class="text-primary">Apprentissages critiques BUT GEII:</h6>
           <ul class="small">
@@ -320,6 +346,8 @@
               <p class="text-white mt-1 mb-2 fst-italic">Analyse des pertes engendrées par le système de stock défaillant : temps perdu en recherches manuelles, surcommandes préventives, et occupation inutile de l'espace de stockage impactant directement la productivité.</p>
             </li>
           </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
