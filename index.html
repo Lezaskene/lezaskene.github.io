@@ -70,7 +70,6 @@
   </div>
 </section>
 
-
 <!-- Ajoute ceci dans la section "Compétences" (modifié avec data-skill + .skill-filter) -->
 <section id="competences" class="container py-5 animate__animated animate__fadeInUp">
   <h2 class="text-center mb-4">Compétences</h2>
@@ -79,7 +78,7 @@
     <span class="badge bg-primary p-3 skill-filter" data-skill="CSS">CSS</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="JavaScript">JavaScript</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Python">Python</span>
-    <span class="badge bg-primary p-3 skill-filter" data-skill="Django">Django</span>
+    <span class="badge bg-primary p-3 skill-filter" data-skill="BDD">BDD</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="PHP">PHP</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="SQL">SQL</span>
     <span class="badge bg-primary p-3 skill-filter" data-skill="Node-RED">Node-RED</span>
@@ -98,7 +97,7 @@
   <div class="row g-4">
 
     <!-- Projet 1 -->
-    <div class="col-md-6 project" data-skills="HTML,CSS,JavaScript,SQL,Node-RED,Suite Office,Communication,Python,Travail d'équipe,Automatisme">
+    <div class="col-md-6 project" data-skills="Supervision,HTML,CSS,JavaScript,SQL,Node-RED,Suite Office,Communication,Python,Travail d'équipe,Automatisme">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Comptage de personnes par caméras IP</h3>
@@ -109,7 +108,7 @@
     </div>
 
         <!-- Projet 2 -->
-    <div class="col-md-6 project" data-skills="PHP,HTML,CSS,Python,Travail d'équipe,Communication,Automatisme">
+    <div class="col-md-6 project" data-skills="SQL,PHP,HTML,CSS,Python,Travail d'équipe,Communication,Automatisme">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Site de gestion de stock</h3>
@@ -120,18 +119,18 @@
     </div>
 
     <!-- Projet 3 -->
-    <div class="col-md-6 project" data-skills="Python,Django,SQL,HTML,CSS">
+    <div class="col-md-6 project" data-skills="Python,BDD,SQL,HTML,CSS,PHP,Communication,Automatisme">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
-          <h3 class="card-title">Application web Django</h3>
-          <p class="card-text">Développement d'une application web moderne avec Django, intégrant base de données et authentification.</p>
+          <h3 class="card-title">Mini projet Base de données</h3>
+          <p class="card-text">Développement d'une application web avec PHP et MySQL, intégrant authentification, historique des scores et gestion des profils utilisateur.</p>
           <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalDjango">Voir plus</a>
         </div>
       </div>
     </div>
 
     <!-- Projet 4 -->
-    <div class="col-md-6 project" data-skills="Automatisme,Supervision">
+    <div class="col-md-6 project" data-skills="Automatisme,Supervision,Communication,Automatisme">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Prototype d'ascenseur + Supervision</h3>
@@ -142,7 +141,7 @@
     </div>
 
     <!-- Projet  -->
-    <div class="col-md-6 project" data-skills="Capteurs,Embarqué">
+    <div class="col-md-6 project" data-skills="Capteurs,Embarqué,Communication,Automatisme">
       <div class="card bg-black text-light h-100 border border-primary">
         <div class="card-body">
           <h3 class="card-title">Robot mobile autonome</h3>
@@ -182,21 +181,61 @@
       <div class="modal-body">
         <img src="assets/chaine_global_de_fonctionnement.jpg" class="img-fluid rounded mb-3" alt="Projet comptage">
         <p>Projet réalisé chez Cojitech : système de comptage de personnes basé sur des caméras IP. Interfaces web créées avec HTML/CSS/JS. Gestion de la logique via Node-RED et stockage des données avec SQL.</p>
+        
+        <!-- Section apprentissages critiques -->
+        <div class="mt-4 pt-3 border-top border-secondary">
+          <h6 class="text-primary">Apprentissages critiques BUT GEII:</h6>
+          <ul class="small">
+            <li><span class="badge bg-info me-2">Concevoir</span><strong>AC31.02</strong> : Prouver la pertinence de ses choix technologiques
+              <p class="text-white mt-1 mb-2 fst-italic">Lors du développement du système de comptage, j'ai démontré la pertinence de mes choix de logiciels, du type de transmission des données et de la base de données utilisée.</p>
+            </li>
+            <li><span class="badge bg-success me-2">Vérifier</span><strong>AC32.02</strong> : Proposer une solution corrective à un dysfonctionnement
+              <p class="text-white mt-1 mb-2 fst-italic">Dans le cadre des interventions techniques auprès des CSU de Vannes et Rennes, j'ai diagnostiqué les dysfonctionnements des équipements de sécurité et proposé des solutions adaptées.</p>
+            </li>
+            <li><span class="badge bg-warning text-dark me-2">Intégrer</span><strong>AC34.01AII</strong> : Planifier l'installation et la mise en service d'un nouvel équipement
+              <p class="text-white mt-1 mb-2 fst-italic">Rédaction d'un dossier d'exécution pour la DGS lors de l'installation du système sur un site classé ERP, en respectant les contraintes réglementaires.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- MODAL Django -->
+<!-- MODAL Mini projet BDD -->
 <div class="modal fade" id="modalDjango" tabindex="-1" aria-labelledby="modalDjangoLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-dark text-light">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalDjangoLabel">Application web Django</h5>
+        <h5 class="modal-title" id="modalDjangoLabel">Mini projet Base de données</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Développement d'une application web moderne avec Django, intégrant base de données et authentification.</p>
+        <div class="mb-3 text-center">
+          <div>
+            <img src="assets/Projet_bdd1.png" class="img-fluid rounded mb-0 mt-0" style="max-width: 80%;" alt="Interface du mini projet BDD - Vue 1">
+          </div>
+          <div style="margin-top: -1px;">
+            <img src="assets/Projet_bdd2.png" class="img-fluid rounded mb-0 mt-0" style="max-width: 80%;" alt="Interface du mini projet BDD - Vue 2">
+          </div>
+        </div>
+        
+        <p>Ce mini projet consistait à développer une application web complète en PHP/MySQL permettant aux utilisateurs de :</p>
+        <ul>
+          <li>Accéder à une page personnelle avec leurs informations</li>
+          <li>Participer à un quiz interactif avec enregistrement des réponses</li>
+          <li>Consulter l'historique de leurs scores et réponses précédentes</li>
+          <li>Personnaliser leur profil (ajout/modification de photo de profil)</li>
+        </ul>
+        
+        <p>Le projet met en œuvre du développement web et de la gestion de bases de données :</p>
+        <ul>
+          <li>Gestion des sessions utilisateur et protection des données</li>
+          <li>Interface utilisateur responsive avec Bootstrap</li>
+          <li>Traitement des formulaires et validation des données</li>
+        </ul>
+        
+        <p>La base de données relationnelle contient plusieurs tables interconnectées pour stocker les informations des participants, les questions, les réponses et les scores.</p>
       </div>
     </div>
   </div>
@@ -211,7 +250,17 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Conception et réalisation d'un prototype d'ascenseur automatisé avec système de supervision.</p>
+        <img src="assets/Ascenceur.png" class="img-fluid rounded mb-3" alt="Prototype d'ascenseur">
+        <p>Ce projet, réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Évaluation), consistait en la conception et la réalisation d'un prototype d'ascenseur automatisé avec un système de supervision intégré. L'objectif était de développer une maquette fonctionnelle qui simule le comportement d'un ascenseur réel, tout en intégrant une interface de supervision pour le contrôle et le monitoring.</p>
+        
+        <p>Le prototype combine plusieurs technologies :</p>
+        <ul>
+          <li>Automate programmable pour la gestion des déplacements et des états de l'ascenseur</li>
+          <li>Capteurs de position pour détecter l'étage actuel</li>
+          <li>Interface homme-machine pour la visualisation et le contrôle</li>
+          <li>Système de communication pour l'échange de données entre l'automate et le système de supervision</li>
+        </ul>
+        <p>La supervision permet de suivre en temps réel l'état de l'ascenseur, de visualiser sa position dans la cage d'ascenseur. Le projet a permis de mettre en pratique les compétences en automatisme, supervision, et développement d'interfaces utilisateur.</p>
       </div>
     </div>
   </div>
@@ -247,27 +296,26 @@
           L'entreprise souhaitait un outil de gestion de stock répondant à plusieurs attentes :
           accéder à chaque matériel via un QR code et un smartphone, garder un historique des entrées/sorties, gérer des comptes utilisateurs individuels, ajouter des informations facultatives pour chaque matériel, envoyer automatiquement un e-mail lorsque le stock atteint un seuil critique, et proposer une interface adaptée aux téléphones ainsi qu'une version PC plus complète avec des fonctionnalités de modification.
         </p>
+        
+        <!-- Section apprentissages critiques -->
+        <div class="mt-4 pt-3 border-top border-secondary">
+          <h6 class="text-primary">Apprentissages critiques BUT GEII:</h6>
+          <ul class="small">
+            <li><span class="badge bg-info me-2">Concevoir</span><strong>AC31.01</strong> : Contribuer à la rédaction d'un cahier des charges
+              <p class="text-white mt-1 mb-2 fst-italic">Lors du lancement du projet de gestion de stock chez Cojitech, j'ai contribué à la rédaction du cahier des charges en proposant des solutions adaptées aux besoins.</p>
+            </li>
+            <li><span class="badge bg-info me-2">Concevoir</span><strong>AC31.03</strong> : Rédiger un dossier de conception
+              <p class="text-white mt-1 mb-2 fst-italic">J'ai élaboré un dossier de conception technique détaillant l'architecture, les fonctionnalités et les évolutions du système de gestion de stock.</p>
+            </li>
+            <li><span class="badge bg-success me-2">Vérifier</span><strong>AC32.03</strong> : Produire une procédure d'essais pour valider la conformité d'un système
+              <p class="text-white mt-1 mb-2 fst-italic">Conception d'une procédure d'essais complète pour le module de notification par email, incluant tests unitaires, d'intégration, fonctionnels, de robustesse et de non-régression.</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- MODAL 5 -->
-<div class="modal fade" id="modalAscenseur" tabindex="-1" aria-labelledby="modalAscenseurLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content bg-dark text-light">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalAscenseurLabel">Prototype d'ascenseur + Supervision</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img src="assets/projet_ascenseur_supervision.jpg" class="img-fluid rounded mb-3" alt="Prototype d'ascenseur">
-        <p>Conception et réalisation d'un prototype d'ascenseur automatisé avec un système de supervision. Ce projet démontre mes compétences en automatisme, supervision, et développement d'interfaces utilisateur.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
