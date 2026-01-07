@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book d'apprentissage - Théo Boursiquot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-dark text-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black shadow fixed-top">
+    <div class="container-fluid justify-content-center">
+      <a class="nav-link px-3" href="index.html#accueil">Accueil</a>
+      <a class="nav-link px-3" href="index.html#apropos">À propos</a>
+      <a class="nav-link px-3" href="index.html#competences">Compétences</a>
+      <a class="nav-link px-3" href="index.html#projets">Projets</a>
+      <a class="nav-link px-3 active" href="book-apprentissage.html">Book d'apprentissage</a>
+      <a class="nav-link px-3" href="index.html#cv">CV</a>
+      <a class="nav-link px-3" href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="text-center py-5 mt-5 animate__animated animate__fadeIn">
+    <h1>Book d'apprentissage</h1>
+    <p class="lead">Suivi de mon parcours en alternance - Formation IMT Atlantique</p>
+  </header>
+
+  <section class="container py-5 animate__animated animate__fadeInUp">
+    
+    <!-- Accordéon principal par année -->
+    <div class="accordion" id="accordionAnnees">
+      
+      <!-- ANNÉE 1 -->
+      <div class="accordion-item bg-dark border border-primary">
+        <h2 class="accordion-header" id="headingAnnee1">
+          <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnnee1" aria-expanded="false" aria-controls="collapseAnnee1">
+            <strong>Année 1 (2025-2026)</strong>
+          </button>
+        </h2>
+        <div id="collapseAnnee1" class="accordion-collapse collapse" aria-labelledby="headingAnnee1" data-bs-parent="#accordionAnnees">
+          <div class="accordion-body">
+            
+            <!-- Sous-accordéon pour les semestres -->
+            <div class="accordion" id="accordionSemestresAnnee1">
+              
+              <!-- Semestre 5 (Octobre - Janvier) -->
+              <div class="accordion-item bg-dark border border-secondary">
+                <h2 class="accordion-header" id="headingS5">
+                  <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS5" aria-expanded="false" aria-controls="collapseS5">
+                    Semestre 5 : Octobre - Janvier
+                  </button>
+                </h2>
+                <div id="collapseS5" class="accordion-collapse collapse" aria-labelledby="headingS5" data-bs-parent="#accordionSemestresAnnee1">
+                  <div class="accordion-body">
+                    
+                    <div class="row g-4">
+                      <!-- Colonne Entreprise -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-info h-100">
+                          <div class="card-header bg-info text-dark">
+                            <h5 class="mb-0">Retour sur les acquis en entreprise</h5>
+                          </div>
+                          <div class="card-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-3">
+                                <strong>✓</strong> Une ou plusieurs missions marquantes et/ou représentatives de ses missions durant la période
+                              </li>
+                              <li>
+                                <strong>✓</strong> Les compétences acquises ou en cours d'acquisition (en lien avec grille de compétences)
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Colonne École -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-warning h-100">
+                          <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">Retour sur les acquis à l'école</h5>
+                          </div>
+                          <div class="card-body">
+                            <p class="mb-2">Un ou plusieurs points marquants des situations académiques, soit le positionnement vis-à-vis :</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-2">• de nouveaux enseignements (réussites, difficultés, appétences)</li>
+                              <li>• de l'approfondissement dans certaines matières (mobilisation des connaissances antérieures, ouvertures, appétences)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Colonne Analyse -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-success h-100">
+                          <div class="card-header bg-success text-dark">
+                            <h5 class="mb-0">Analyse réflexive</h5>
+                          </div>
+                          <div class="card-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-3">
+                                ➤ Relater ce qui a motivé la candidature dans l'école et dans l'entreprise
+                              </li>
+                              <li>
+                                ➤ Se questionner sur le choix de formation au regard des premières semaines à l'école et en entreprise
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Semestre 6 (Février - Juin) -->
+              <div class="accordion-item bg-dark border border-secondary mt-2">
+                <h2 class="accordion-header" id="headingS6">
+                  <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS6" aria-expanded="false" aria-controls="collapseS6">
+                    Semestre 6 : Février - Juin
+                  </button>
+                </h2>
+                <div id="collapseS6" class="accordion-collapse collapse" aria-labelledby="headingS6" data-bs-parent="#accordionSemestresAnnee1">
+                  <div class="accordion-body">
+                    
+                    <div class="row g-4">
+                      <!-- Colonne Entreprise -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-info h-100">
+                          <div class="card-header bg-info text-dark">
+                            <h5 class="mb-0">Retour sur les acquis en entreprise</h5>
+                          </div>
+                          <div class="card-body">
+                            <ul class="list-unstyled">
+                              <li class="mb-3">
+                                <strong>✓</strong> Une ou plusieurs missions marquantes et/ou représentatives de ses missions durant la période
+                              </li>
+                              <li>
+                                <strong>✓</strong> Les compétences acquises ou en cours d'acquisition (en lien avec grille de compétences)
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Colonne École -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-warning h-100">
+                          <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">Retour sur les acquis à l'école</h5>
+                          </div>
+                          <div class="card-body">
+                            <p class="mb-2">Un ou plusieurs points marquants des situations académiques, soit le positionnement vis-à-vis :</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-2">• de nouveaux enseignements (réussites, difficultés, appétences)</li>
+                              <li>• de l'approfondissement dans certaines matières (mobilisation des connaissances antérieures, ouvertures, appétences)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Colonne Analyse -->
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-success h-100">
+                          <div class="card-header bg-success text-dark">
+                            <h5 class="mb-0">Analyse réflexive</h5>
+                          </div>
+                          <div class="card-body">
+                            <p>➤ Mettre en évidence les liens entre les apprentissages sur les deux lieux de formation et aussi les complémentarités</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- ANNÉE 2 (Template à remplir plus tard) -->
+      <div class="accordion-item bg-dark border border-primary mt-3">
+        <h2 class="accordion-header" id="headingAnnee2">
+          <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnnee2" aria-expanded="false" aria-controls="collapseAnnee2">
+            <strong>Année 2 (2026-2027)</strong>
+          </button>
+        </h2>
+        <div id="collapseAnnee2" class="accordion-collapse collapse" aria-labelledby="headingAnnee2" data-bs-parent="#accordionAnnees">
+          <div class="accordion-body">
+            
+            <!-- Sous-accordéon pour les semestres -->
+            <div class="accordion" id="accordionSemestresAnnee2">
+              
+              <!-- Semestre 7 -->
+              <div class="accordion-item bg-dark border border-secondary">
+                <h2 class="accordion-header" id="headingS7">
+                  <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS7" aria-expanded="false" aria-controls="collapseS7">
+                    Semestre 7 : Septembre - Janvier
+                  </button>
+                </h2>
+                <div id="collapseS7" class="accordion-collapse collapse" aria-labelledby="headingS7" data-bs-parent="#accordionSemestresAnnee2">
+                  <div class="accordion-body">
+                    <div class="row g-4">
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-info h-100">
+                          <div class="card-header bg-info text-dark">
+                            <h5 class="mb-0">Retour sur les acquis en entreprise</h5>
+                          </div>
+                          <div class="card-body">
+                            <p class="mb-2">Un ou plusieurs missions marquantes et/ou représentatives de ses missions durant la période</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-2">• de réussites, difficultés, appétences</li>
+                              <li>• de l'approfondissement dans certaines matières</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-warning h-100">
+                          <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">Retour sur les acquis à l'école</h5>
+                          </div>
+                          <div class="card-body">
+                            <p class="text-muted fst-italic">Contenu à compléter lors du semestre 7</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card bg-black border border-success h-100">
+                          <div class="card-header bg-success text-dark">
+                            <h5 class="mb-0">Analyse réflexive</h5>
+                          </div>
+                          <div class="card-body">
+                            <p>➤ Poser les premiers contours du projet professionnel : appétence pour un type d'activité, de secteur, de typologie d'entreprises, de métiers</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Semestre 8 -->
+              <div class="accordion-item bg-dark border border-secondary mt-2">
+                <h2 class="accordion-header" id="headingS8">
+                  <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS8" aria-expanded="false" aria-controls="collapseS8">
+                    Semestre 8 : Février - Juin
+                  </button>
+                </h2>
+                <div id="collapseS8" class="accordion-collapse collapse" aria-labelledby="headingS8" data-bs-parent="#accordionSemestresAnnee2">
+                  <div class="accordion-body">
+                    <p class="text-muted fst-italic">Contenu à compléter lors du semestre 8</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="bg-black text-center py-3">
+    <p class="mb-0 text-primary">© 2025 Théo Boursiquot</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
