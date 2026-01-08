@@ -27,6 +27,51 @@
     <p class="lead">Suivi de mon parcours en alternance - Formation IMT Atlantique</p>
   </header>
 
+  <!-- Présentation IMT Atlantique et EL2D -->
+  <section class="container py-4 animate__animated animate__fadeInUp">
+    <div class="row g-4 mb-5">
+      <!-- IMT Atlantique -->
+      <div class="col-md-6">
+        <div class="card bg-black border border-primary h-100">
+          <div class="card-header bg-primary text-center">
+            <h4 class="mb-0">🎓 IMT Atlantique</h4>
+          </div>
+          <div class="card-body">
+            <p><strong>École d'ingénieurs généraliste</strong></p>
+            <p>IMT Atlantique est une grande école d'ingénieurs publique, membre de l'Institut Mines-Télécom. Située à Nantes, Brest et Rennes, elle forme des ingénieurs généralistes capables de répondre aux défis de la transformation numérique.</p>
+            <p><strong>Formation FIT (Formation par l'Ingénierie et la Technologie)</strong></p>
+            <p>Le parcours FIT en alternance se concentre sur la transformation digitale des systèmes industriels, alliant compétences techniques en automatisation, informatique industrielle et systèmes embarqués, avec une approche managériale et projet.</p>
+            <ul class="small">
+              <li>Durée : 3 ans en alternance</li>
+              <li>Rythme : 3 semaines en entreprise / 1 semaine à l'école</li>
+              <li>Domaines : Industrie 4.0, IoT, Automatisation, Data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EL2D -->
+      <div class="col-md-6">
+        <div class="card bg-black border border-info h-100">
+          <div class="card-header bg-info text-dark text-center">
+            <h4 class="mb-0">🏢 EL2D</h4>
+          </div>
+          <div class="card-body">
+            <p><strong>Entreprise d'alternance</strong></p>
+            <p>EL2D est une entreprise spécialisée dans les installations électriques, la maintenance et les solutions de sécurité pour les secteurs tertiaire et industriel. L'entreprise accompagne ses clients dans leur transition énergétique et numérique.</p>
+            <p><strong>Service informatique</strong></p>
+            <p>Au sein du service informatique d'EL2D, je contribue à la digitalisation des processus métiers, l'automatisation des tâches administratives et l'amélioration des outils de gestion utilisés par les équipes terrain et la direction.</p>
+            <ul class="small">
+              <li>Secteur : Électricité, Maintenance, Sécurité</li>
+              <li>Mission : Digitalisation et automatisation</li>
+              <li>Outils : PRAXEDO, VBA Excel, Python</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="container py-5 animate__animated animate__fadeInUp">
     
     <!-- Accordéon principal par année -->
@@ -35,11 +80,11 @@
       <!-- ANNÉE 1 -->
       <div class="accordion-item bg-dark border border-primary">
         <h2 class="accordion-header" id="headingAnnee1">
-          <button class="accordion-button bg-black text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnnee1" aria-expanded="false" aria-controls="collapseAnnee1">
+          <button class="accordion-button bg-black text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnnee1" aria-expanded="true" aria-controls="collapseAnnee1">
             <strong>Année 1 (2025-2026)</strong>
           </button>
         </h2>
-        <div id="collapseAnnee1" class="accordion-collapse collapse" aria-labelledby="headingAnnee1" data-bs-parent="#accordionAnnees">
+        <div id="collapseAnnee1" class="accordion-collapse collapse show" aria-labelledby="headingAnnee1" data-bs-parent="#accordionAnnees">
           <div class="accordion-body">
             
             <!-- Sous-accordéon pour les semestres -->
@@ -48,11 +93,11 @@
               <!-- Semestre 5 (Octobre - Janvier) -->
               <div class="accordion-item bg-dark border border-secondary">
                 <h2 class="accordion-header" id="headingS5">
-                  <button class="accordion-button bg-dark text-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS5" aria-expanded="false" aria-controls="collapseS5">
+                  <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseS5" aria-expanded="true" aria-controls="collapseS5">
                     Semestre 5 : Octobre - Janvier
                   </button>
                 </h2>
-                <div id="collapseS5" class="accordion-collapse collapse" aria-labelledby="headingS5" data-bs-parent="#accordionSemestresAnnee1">
+                <div id="collapseS5" class="accordion-collapse collapse show" aria-labelledby="headingS5" data-bs-parent="#accordionSemestresAnnee1">
                   <div class="accordion-body">
                     
                     <div class="row g-4">
@@ -63,14 +108,67 @@
                             <h5 class="mb-0">Retour sur les acquis en entreprise</h5>
                           </div>
                           <div class="card-body">
-                            <ul class="list-unstyled">
-                              <li class="mb-3">
-                                <strong>✓</strong> Une ou plusieurs missions marquantes et/ou représentatives de ses missions durant la période
-                              </li>
-                              <li>
-                                <strong>✓</strong> Les compétences acquises ou en cours d'acquisition (en lien avec grille de compétences)
-                              </li>
-                            </ul>
+                            <h6 class="text-info mb-3">🔍 Découverte du service informatique</h6>
+                            
+                            <div class="mb-4">
+                              <h6>📱 PRAXEDO - Solution de digitalisation</h6>
+                              <p>PRAXEDO est une plateforme cloud de gestion des interventions terrain qui unifie la collecte de données, l'automatisation des processus et la génération de documents. Cette solution permet de digitaliser l'ensemble du cycle d'intervention : planification, suivi en temps réel, collecte d'informations via formulaires mobiles, et génération automatique de rapports PDF.</p>
+                              <p><strong>Missions réalisées :</strong></p>
+                              <ul>
+                                <li>Programmation et résolution de problèmes pour les techniciens terrain</li>
+                                <li>Configuration de formulaires intelligents pour la collecte de données</li>
+                                <li>Automatisation de la génération de PDF depuis les formulaires mobiles</li>
+                                <li>Support aux équipes pour l'utilisation optimale de la plateforme</li>
+                              </ul>
+                            </div>
+
+                            <div class="mb-4">
+                              <h6>📊 Automatisation VBA - Matrice de devis</h6>
+                              <p>Finalisation et optimisation d'un fichier Excel existant servant de matrice pour la gestion des devis. Ce projet a nécessité une analyse approfondie du système existant et la mise en place de nouvelles automatisations.</p>
+                              <ul>
+                                <li>Débogage et correction d'un ancien système d'automatisation</li>
+                                <li>Développement de macros VBA pour le suivi mensuel de l'avancement des devis</li>
+                                <li>Création d'indicateurs automatiques de gestion</li>
+                                <li>Amélioration de l'interface utilisateur pour faciliter la saisie</li>
+                              </ul>
+                            </div>
+
+                            <div class="mb-4">
+                              <h6>🐍 Script Python - Renommage automatique</h6>
+                              <p>Développement d'un outil d'automatisation pour une collègue devant renommer plus de 250 fichiers PDF selon une nomenclature spécifique.</p>
+                              <ul>
+                                <li>Script Python pour renommage en masse de fichiers</li>
+                                <li>Export automatique de la liste des fichiers vers Excel</li>
+                                <li>Gain de temps significatif (de plusieurs heures à quelques secondes)</li>
+                                <li>Solution réutilisable pour d'autres besoins similaires</li>
+                              </ul>
+                            </div>
+
+                            <div class="mb-4">
+                              <h6>⚙️ Import automatisé - Interventions 2026</h6>
+                              <p>Automatisation majeure de l'import des interventions de maintenance dans PRAXEDO, remplaçant un processus manuel de plusieurs heures.</p>
+                              <p><strong>Contexte :</strong> Fichier Excel avec plus de 2000 lignes d'interventions prévisionnelles pour 2026. Auparavant, l'import se faisait manuellement avec plusieurs heures de copier-coller.</p>
+                              <ul>
+                                <li>Analyse et compréhension du format d'import PRAXEDO</li>
+                                <li>Développement d'un code VBA pour extraire et formater les données</li>
+                                <li>Mapping automatique des informations vers les champs PRAXEDO</li>
+                                <li>Génération de fichiers d'import prêts à l'emploi</li>
+                                <li>Réduction du temps de traitement de plusieurs heures à quelques minutes</li>
+                              </ul>
+                            </div>
+
+                            <div class="border-top border-secondary pt-3 mt-3">
+                              <h6 class="text-info">Compétences développées</h6>
+                              <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">VBA Excel</span>
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">PRAXEDO</span>
+                                <span class="badge bg-secondary">Automatisation</span>
+                                <span class="badge bg-secondary">Analyse de processus</span>
+                                <span class="badge bg-secondary">Résolution de problèmes</span>
+                                <span class="badge bg-secondary">Gestion de données</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -82,11 +180,14 @@
                             <h5 class="mb-0">Retour sur les acquis à l'école</h5>
                           </div>
                           <div class="card-body">
-                            <p class="mb-2">Un ou plusieurs points marquants des situations académiques, soit le positionnement vis-à-vis :</p>
-                            <ul class="list-unstyled">
-                              <li class="mb-2">• de nouveaux enseignements (réussites, difficultés, appétences)</li>
-                              <li>• de l'approfondissement dans certaines matières (mobilisation des connaissances antérieures, ouvertures, appétences)</li>
+                            <p>Un ou plusieurs points marquants des situations académiques, soit le positionnement vis-à-vis :</p>
+                            <ul>
+                              <li>de nouveaux enseignements (réussites, difficultés, appétences)</li>
+                              <li>de l'approfondissement dans certaines matières (mobilisation des connaissances antérieures, ouvertures, appétences)</li>
                             </ul>
+                            <div class="alert alert-warning mt-3" role="alert">
+                              <strong>📝 Section à compléter après les premières semaines de cours</strong>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -98,14 +199,15 @@
                             <h5 class="mb-0">Analyse réflexive</h5>
                           </div>
                           <div class="card-body">
-                            <ul class="list-unstyled">
-                              <li class="mb-3">
-                                ➤ Relater ce qui a motivé la candidature dans l'école et dans l'entreprise
-                              </li>
-                              <li>
-                                ➤ Se questionner sur le choix de formation au regard des premières semaines à l'école et en entreprise
-                              </li>
-                            </ul>
+                            <h6 class="text-success">Motivations</h6>
+                            <p class="mb-3">➤ Relater ce qui a motivé la candidature dans l'école et dans l'entreprise</p>
+                            
+                            <h6 class="text-success">Premiers retours</h6>
+                            <p>➤ Se questionner sur le choix de formation au regard des premières semaines à l'école et en entreprise</p>
+
+                            <div class="alert alert-success mt-3" role="alert">
+                              <strong>💭 Section à compléter avec votre analyse personnelle</strong>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -141,6 +243,9 @@
                                 <strong>✓</strong> Les compétences acquises ou en cours d'acquisition (en lien avec grille de compétences)
                               </li>
                             </ul>
+                            <div class="alert alert-info mt-3" role="alert">
+                              <small>📝 Contenu à compléter durant le semestre 6</small>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -157,6 +262,9 @@
                               <li class="mb-2">• de nouveaux enseignements (réussites, difficultés, appétences)</li>
                               <li>• de l'approfondissement dans certaines matières (mobilisation des connaissances antérieures, ouvertures, appétences)</li>
                             </ul>
+                            <div class="alert alert-warning mt-3" role="alert">
+                              <small>📝 Contenu à compléter durant le semestre 6</small>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -169,6 +277,9 @@
                           </div>
                           <div class="card-body">
                             <p>➤ Mettre en évidence les liens entre les apprentissages sur les deux lieux de formation et aussi les complémentarités</p>
+                            <div class="alert alert-success mt-3" role="alert">
+                              <small>💭 Contenu à compléter durant le semestre 6</small>
+                            </div>
                           </div>
                         </div>
                       </div>

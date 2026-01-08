@@ -138,3 +138,86 @@ a:hover {
   color: #ccc;
 }
 
+/* ===== Book d'apprentissage ===== */
+.accordion-button {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+}
+
+.accordion-body {
+  background-color: var(--bg-color);
+}
+
+/* Cartes du book d'apprentissage */
+.card-body p,
+.card-body ul,
+.card-body li {
+  color: #f5f5f5 !important;
+}
+
+.card-body .small {
+  color: #e6e6e6 !important;
+}
+
+.card-body h6 {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.card-body .text-white-50 {
+  color: #d0d0d0 !important;
+}
+
+/* En-têtes des cartes */
+.card-header h5,
+.card-header h4 {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Alertes personnalisées */
+.alert {
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Badges de compétences dans les cartes */
+.card-body .badge {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Amélioration des listes */
+.card-body ul {
+  padding-left: 1.2rem;
+}
+
+.card-body ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Bordures des cartes */
+.card.border-info,
+.card.border-warning,
+.card.border-success {
+  border-width: 2px !important;
+}
+
+/* Titres dans les cartes */
+.card-body strong {
+  color: #ffffff;
+}
+
+/* Présentation IMT/EL2D */
+.card-body p:first-of-type strong {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
