@@ -144,15 +144,6 @@ a:hover {
   font-size: 1.1rem;
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-}
-
-.accordion-body {
-  background-color: var(--bg-color);
-}
-
 /* Cartes du book d'apprentissage */
 .card-body p,
 .card-body ul,
